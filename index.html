@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ehsaas | Shayari & Quotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logo.png">
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero">
+    <h1>Ehsaas</h1>
+    <p>Feel the words, live the emotions ✨</p>
+    <!-- <button onclick="scrollToQuotes()">Explore Shayari</button> -->
+    <button onclick="scrollToAbout()">Explore Ehsaas</button>
+</header>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Ehsaas</h2>
+    <p>
+        Ehsaas is a soulful collection of shayari and quotes that
+        express love, pain, motivation, and life.
+        Every word here is written to touch your heart.
+    </p>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+    <h2>Categories</h2>
+    <div class="category-cards">
+        <div onclick="showQuotes('love')">❤️ Love</div>
+        <div onclick="showQuotes('sad')">💔 Sad</div>
+        <div onclick="showQuotes('motivation')">🔥 Motivation</div>
+        <div onclick="showQuotes('life')">🌿 Life</div>
+    </div>
+</section>
+
+<!-- QUOTES SECTION -->
+<section id="quotes" class="quotes">
+    <h2>Shayari & Quotes</h2>
+    <div id="quoteContainer"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Ehsaas | Designed by Anuj</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
