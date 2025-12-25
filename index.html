@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ehsaas | Shayari & Quotes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./logo.png">
+  <meta charset="UTF-8">
+  <title>Ehsaas | Shayari & Quotes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./logo.png">
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
+  <!-- HERO SECTION -->
+  <header class="hero">
     <h1>Ehsaas</h1>
-    <p>Feel the words, live the emotions ✨</p>
-    <!-- <button onclick="scrollToQuotes()">Explore Shayari</button> -->
-    <button onclick="scrollToAbout()">Explore Ehsaas</button>
-</header>
+    <p id="randomQuote">Feel the words, live the emotions ✨</p>
+    <div class="hero-buttons">
+      <button onclick="scrollToAbout()">Explore Ehsaas</button>
+      <button id="langBtn" onclick="toggleLanguage()">Translate to English</button>
+    </div>
+  </header>
 
-<!-- ABOUT -->
-<section class="about" id="about">
+  <!-- ABOUT -->
+  <section class="about" id="about">
     <h2>About Ehsaas</h2>
     <p>
-        Ehsaas is a soulful collection of shayari and quotes that
-        express love, pain, motivation, and life.
-        Every word here is written to touch your heart.
+      Ehsaas is a soulful collection of shayari where emotions speak through words
+      With four heartfelt categories—Love, Sad, Motivation, and Life—the site offers poetry that touches the heart, uplifts the spirit, and reflects life’s deepest feelings. 
+    ✨ Ehsaas – Where emotions breathe through Shayari.
     </p>
-</section>
+  </section>
 
-<!-- CATEGORIES -->
-<section class="categories">
+  <!-- CATEGORIES -->
+  <section class="categories">
     <h2>Categories</h2>
     <div class="category-cards">
-        <div onclick="showQuotes('love')">❤️ Love</div>
-        <div onclick="showQuotes('sad')">💔 Sad</div>
-        <div onclick="showQuotes('motivation')">🔥 Motivation</div>
-        <div onclick="showQuotes('life')">🌿 Life</div>
+      <button onclick="showQuotes('love')">❤️ Love</button>
+      <button onclick="showQuotes('sad')">💔 Sad</button>
+      <button onclick="showQuotes('motivation')">🔥 Motivation</button>
+      <button onclick="showQuotes('life')">🌿 Life</button>
     </div>
-</section>
+  </section>
 
-<!-- QUOTES SECTION -->
-<section id="quotes" class="quotes">
+  <!-- QUOTES SECTION -->
+  <section id="quotes" class="quotes">
     <h2>Shayari & Quotes</h2>
     <div id="quoteContainer"></div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 Ehsaas | Designed by Anuj</p>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Ehsaas | Designed by Ehsaas</p>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
